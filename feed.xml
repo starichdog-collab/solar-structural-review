@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>두자 태양광 구조검토 가이드</title>
+    <link>https://starichdog-collab.github.io/solar-structural-review/</link>
+    <description>두자 태양광 구조검토 가이드의 설치 준비와 구조안전 정보를 본문 전체로 제공합니다.</description>
+    <language>ko-kr</language>
+    <atom:link href="https://starichdog-collab.github.io/solar-structural-review/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>공장 지붕 태양광 구조검토 | 준비자료·진행 절차 | 두자</title>
+      <link>https://starichdog-collab.github.io/solar-structural-review/roof-solar-review.html</link>
+      <guid isPermaLink="true">https://starichdog-collab.github.io/solar-structural-review/roof-solar-review.html</guid>
+      <description><![CDATA[<article><h1>공장 지붕 태양광 구조검토: 준비자료와 진행 절차</h1><p class="byline">운영: <a href="https://dooja.co.kr/">두자(DOOJA)</a> · 내용 업데이트: <time datetime="2026-10-22">2026년 10월 22일</time></p>
+<p>공장 지붕 태양광 구조검토를 의뢰할 때는 <strong>기존 건축물 자료와 새로 설치할 설비 자료</strong>가 함께 필요합니다. 이 글은 시공사·사업자와 건물주가 검토 범위를 협의할 때 사용할 준비 목록입니다.</p>
+<h2 id="documents">검토자료를 두 묶음으로 준비하세요</h2>
+<div class="table-scroll"><table><caption>공장·창고 태양광 구조검토 준비자료</caption><thead><tr><th scope="col">구분</th><th scope="col">자료</th><th scope="col">확인할 내용</th></tr></thead><tbody>
+<tr><th scope="row">기존 건물</th><td>구조도면·구조계산서</td><td>설치 구역과 기존 구조 형식이 식별되는 자료</td></tr>
+<tr><th scope="row">현재 상태</th><td>현장 사진·변경 이력</td><td>증축, 지붕 교체, 보강, 부식이나 변형 관련 기록</td></tr>
+<tr><th scope="row">설비 배치</th><td>모듈 배치도·제품 사양</td><td>설치 위치, 규격·중량, 높이와 경사</td></tr>
+<tr><th scope="row">지지 구조</th><td>부재·접합부 상세</td><td>지지대, 레일, 브래킷, 고정부의 형식과 위치</td></tr>
+<tr><th scope="row">제출 목적</th><td>필요 성과품·일정</td><td>검토 대상, 요청한 제출 문서와 완료 희망일</td></tr>
+</tbody></table></div>
+<p>자료마다 도면 번호와 작성일을 적어 최신본을 구분하면 검토 도중 다른 배치도나 자재 사양을 사용하는 혼선을 줄일 수 있습니다. 미정인 항목은 임의로 채우지 말고 확정 예정일과 함께 알려주세요.</p>
+<h2 id="workflow">구조검토는 어떤 순서로 진행하나요?</h2>
+<ol><li><strong>대상 확인:</strong> 검토할 건물과 설치 구역, 현장 위치와 일정을 공유합니다.</li><li><strong>자료·범위 협의:</strong> 보유 자료와 추가 확인이 필요한 항목, 성과품 범위를 정리합니다.</li><li><strong>구조해석·검토:</strong> 합의한 설치 조건과 하중에 따라 지지 구조와 기존 건물을 검토합니다.</li><li><strong>결과 확인:</strong> 검토에 사용한 도면, 조건과 보완 사항을 확인합니다.</li></ol>
+<h2 id="results">검토 결과를 받을 때 확인할 것</h2>
+<ul><li>실제 설치할 배치·모듈·지지대와 검토 대상이 일치하는지</li><li>확정되지 않은 사항이나 별도 조사 조건이 남아 있는지</li><li>보강이 필요한 경우 적용 위치와 후속 협의 범위가 무엇인지</li><li>설치 계획이 변경되면 어떤 자료를 다시 보내야 하는지</li></ul>
+<p>설치 높이, 경사, 배치나 고정부가 바뀌면 이전 검토 결과가 그대로 적용되는지 다시 확인해야 합니다. 관련 하중은 <a href="https://starichdog-collab.github.io/solar-structural-review/wind-load.html">풍하중 안내</a>와 <a href="https://starichdog-collab.github.io/solar-structural-review/snow-load.html">적설하중 안내</a>를 참고하세요.</p>
+<details><summary>지붕 도면이 없으면 어떤 자료부터 보내나요?</summary><p>보유한 건물 자료, 현장 사진과 설치 계획을 먼저 정리합니다. 자료가 부족한 부분의 조사 필요성과 검토 가능 범위는 상담을 통해 정합니다.</p></details>
+<details><summary>구조검토 비용과 기간은 용량으로만 정하나요?</summary><p>용량 외에도 설치 형식, 기존 건물 검토 여부, 자료 준비 상태와 요구 성과품에 따라 업무가 달라집니다. 검토 범위를 정한 뒤 일정과 비용을 협의합니다.</p></details>
+<p class="source">업무 범위와 상담자료: <a href="https://dooja.co.kr/services/solar-structural-review">두자 공식 태양광 구조검토 안내</a>. 건물주용 기초 설명은 <a href="https://starichdog-collab.github.io/solar-guide/solar-roof-structure.html">지붕 구조안전 안내</a>에서 볼 수 있습니다.</p><p class="source">이 안내는 일반 정보입니다. 개별 현장의 설계·시공과 구조안전 판단은 현장 자료 및 관련 전문가의 검토를 바탕으로 진행합니다.</p><section class="cta"><h2>두자에 현장 조건을 알려주세요</h2><p>현장 주소, 설치 목적, 보유 도면과 희망 일정을 정리하면 필요한 업무 범위를 상담하기 좋습니다.</p><a class="button btn" href="https://dooja.co.kr/services/solar-structural-review">태양광 구조검토 상담 안내 →</a></section><p>설치 공사와 함께 견적을 검토한다면 <a href="https://starichdog-collab.github.io/solar-guide/solar-installation-cost.html">설치비 항목별 비교 안내</a>에서 구조검토·보강 공사의 포함 범위를 확인하세요.</p><aside class="related" aria-label="관련 가이드"><h2>함께 확인할 가이드</h2><ul><li><a href="https://starichdog-collab.github.io/solar-structural-review/wind-load.html">풍하중 검토</a></li><li><a href="https://starichdog-collab.github.io/solar-structural-review/snow-load.html">적설하중 검토</a></li></ul></aside></article>]]></description>
+    </item>
+    <item>
+      <title>태양광 적설하중 검토 | 눈 쌓임·지붕·지지대 확인 | 두자</title>
+      <link>https://starichdog-collab.github.io/solar-structural-review/snow-load.html</link>
+      <guid isPermaLink="true">https://starichdog-collab.github.io/solar-structural-review/snow-load.html</guid>
+      <description><![CDATA[<article><h1>태양광 적설하중 검토: 눈 쌓임과 지붕 조건</h1><p class="byline">운영: <a href="https://dooja.co.kr/">두자(DOOJA)</a> · 내용 업데이트: <time datetime="2026-10-22">2026년 10월 22일</time></p>
+<p>태양광 적설하중 검토는 눈이 쌓일 수 있는 조건과 설비·지붕의 지지 능력을 함께 살피는 과정입니다. <strong>지역의 적설 조건, 지붕 형상과 모듈 배열</strong>을 자료로 정리하는 것부터 시작합니다.</p>
+<h2 id="conditions">눈이 쌓이는 조건을 기록하세요</h2>
+<p>지붕의 단차나 주변 장애물, 설비 배치에 따라 눈이 쌓이는 모습이 달라질 수 있습니다. 현장에 과거의 적설 사진이나 피해 이력이 있다면 검토 자료와 함께 공유하세요. 사진이나 눈의 깊이만으로 설계하중을 결정하지는 않습니다.</p>
+<div class="table-scroll"><table><caption>적설 검토 상담을 위한 확인 목록</caption><thead><tr><th scope="col">구분</th><th scope="col">공유할 내용</th></tr></thead><tbody>
+<tr><th scope="row">현장</th><td>설치 주소, 주변 지형과 과거 적설 관련 기록</td></tr>
+<tr><th scope="row">지붕</th><td>경사·단차·배수구와 주변 장애물 위치</td></tr>
+<tr><th scope="row">설비</th><td>모듈 경사와 배열, 지지대 형식과 고정 조건</td></tr>
+<tr><th scope="row">기존 구조</th><td>구조도면, 추가 설비와 보강·보수 이력</td></tr>
+</tbody></table></div>
+<h2 id="system">모듈과 지붕을 구분해서 확인합니다</h2>
+<p>눈의 영향을 받는 대상은 모듈만이 아닙니다. 모듈의 지지 조건, 레일과 연결부, 기존 지붕까지 함께 검토해야 합니다. 설비 자체의 무게와 다른 하중을 어떻게 조합할지는 적용 기준과 현장 조건에 따라 전문가가 판단합니다.</p>
+<p>모듈 사양서에 표시된 하중 성능도 시험·고정 조건이 있는 자료입니다. 실제 설치 조건과 비교해서 확인하며, 그 수치를 건물 전체의 허용하중으로 사용하지 않습니다.</p>
+<h2 id="maintenance">운영 계획에서 확인할 질문</h2>
+<ul><li>눈이 쌓이거나 내려오는 위치와 점검 접근 경로를 확인했나요?</li><li>배수구 주변과 설비 아래의 상태를 어떻게 점검하나요?</li><li>손상이나 변형이 발견되면 누구에게 알리고 점검을 요청하나요?</li><li>기존 설치 자료와 보수 이력을 보관할 담당자가 있나요?</li></ul>
+<details><summary>모듈의 경사가 있으면 적설 검토가 필요 없나요?</summary><p>경사만으로 눈이 항상 제거된다고 볼 수 없습니다. 실제 지붕과 설비 조건을 바탕으로 검토 범위를 확인합니다.</p></details>
+<details><summary>눈이 쌓인 지붕에 올라가 직접 확인해야 하나요?</summary><p>미끄러짐·추락과 전기설비 위험이 있으므로 접근 방법은 관리 담당자와 전문 점검업체에 확인하세요. 기존 기록과 안전한 위치에서 확보한 자료를 먼저 전달할 수 있습니다.</p></details>
+<p>다른 하중 조건은 <a href="https://starichdog-collab.github.io/solar-structural-review/wind-load.html">풍하중 검토 안내</a>, 도면 준비 방법은 <a href="https://starichdog-collab.github.io/solar-structural-review/roof-solar-review.html">지붕 태양광 구조검토 자료</a>를 참고하세요.</p>
+<p class="source">참고: <a href="https://www.energy.gov/cmei/femp/solar-photovoltaic-hardening-resilience-winter-weather" rel="noopener" target="_blank">미국 에너지부 태양광 설비의 겨울철 기상 대응 안내</a>. 국내 적용 하중과 구조 안전성은 개별 검토가 필요합니다.</p><p class="source">이 안내는 일반 정보입니다. 개별 현장의 설계·시공과 구조안전 판단은 현장 자료 및 관련 전문가의 검토를 바탕으로 진행합니다.</p><section class="cta"><h2>두자에 현장 조건을 알려주세요</h2><p>현장 주소, 설치 목적, 보유 도면과 희망 일정을 정리하면 필요한 업무 범위를 상담하기 좋습니다.</p><a class="button btn" href="https://dooja.co.kr/services/solar-structural-review">태양광 구조검토 상담 안내 →</a></section><aside class="related" aria-label="관련 가이드"><h2>함께 확인할 가이드</h2><ul><li><a href="https://starichdog-collab.github.io/solar-structural-review/roof-solar-review.html">공장 지붕 검토자료</a></li><li><a href="https://starichdog-collab.github.io/solar-structural-review/wind-load.html">풍하중 검토</a></li></ul></aside></article>]]></description>
+    </item>
+    <item>
+      <title>태양광 풍하중 검토 | 모듈·지지대·앵커 확인사항 | 두자</title>
+      <link>https://starichdog-collab.github.io/solar-structural-review/wind-load.html</link>
+      <guid isPermaLink="true">https://starichdog-collab.github.io/solar-structural-review/wind-load.html</guid>
+      <description><![CDATA[<article><h1>태양광 풍하중 검토: 모듈에서 고정부까지</h1><p class="byline">운영: <a href="https://dooja.co.kr/">두자(DOOJA)</a> · 내용 업데이트: <time datetime="2026-10-22">2026년 10월 22일</time></p>
+<p>태양광 구조물에는 바람이 누르는 힘과 들어 올리는 힘이 작용할 수 있습니다. 검토할 때는 모듈의 제품 사양뿐 아니라 <strong>레일·지지대·고정부와 기존 건물로 이어지는 연결 조건</strong>을 함께 살펴봅니다.</p>
+<h2 id="conditions">현장 조건이 중요한 이유</h2>
+<p>설치 위치와 주변 환경, 건물 높이, 지붕 형상과 모듈의 배치가 다르면 바람을 받는 조건도 달라질 수 있습니다. 다른 현장의 결과를 그대로 사용하기보다 실제 대상의 자료와 적용할 설계기준을 확인해야 합니다.</p>
+<div class="table-scroll"><table><caption>풍하중 검토를 위해 공유할 정보</caption><thead><tr><th scope="col">정보</th><th scope="col">준비 내용</th></tr></thead><tbody>
+<tr><th scope="row">현장 위치</th><td>주소, 주변 지형과 건물·장애물 현황</td></tr>
+<tr><th scope="row">건축물</th><td>건물 높이, 지붕 형상과 설치 구역</td></tr>
+<tr><th scope="row">모듈 배치</th><td>경사, 설치 높이, 배열과 지붕 가장자리로부터의 위치</td></tr>
+<tr><th scope="row">고정 방식</th><td>레일, 브래킷, 앵커 또는 클램프의 상세와 제품 자료</td></tr>
+</tbody></table></div>
+<h2 id="connections">어느 부분이 힘을 전달하나요?</h2>
+<p>모듈에 작용한 힘은 고정부와 지지 구조를 거쳐 건물 또는 기초로 전달됩니다. 중간 연결부를 포함한 전체 경로가 검토 대상입니다. 제품 시험 성적을 확인할 때에도 실제 설치에 사용하는 고정 위치와 방식이 자료의 조건에 맞는지 확인합니다.</p>
+<p>기존 자료에 “풍속” 숫자가 적혀 있더라도 그 수치의 정의와 적용 조건이 같다는 뜻은 아닙니다. 다른 현장의 수치만 복사하거나 고정부의 간격을 임의로 정하지 말고, 검토자가 기준과 입력자료를 확인하도록 해야 합니다.</p>
+<h2 id="changes">설치 계획이 바뀌면 알려야 할 내용</h2>
+<ul><li>모듈의 크기·수량·경사·설치 높이 변경</li><li>레일이나 지지대 규격, 고정 방식의 변경</li><li>설치 구역 이동 또는 지붕 가장자리 주변의 배치 변경</li><li>기존 지붕이나 연결 부위에서 새로 확인된 손상</li></ul>
+<details><summary>모듈이 시험을 통과하면 지지대도 안전한가요?</summary><p>모듈과 지지대·접합부·기존 건물은 서로 다른 검토 대상입니다. 제품 시험 자료만으로 설치 시스템 전체의 안전성을 확정하지 않습니다.</p></details>
+<p>자료를 묶는 방법은 <a href="https://starichdog-collab.github.io/solar-structural-review/roof-solar-review.html">공장 지붕 구조검토 준비자료</a>를 참고하세요. 바람 외의 조건은 <a href="https://starichdog-collab.github.io/solar-structural-review/snow-load.html">태양광 적설하중 안내</a>와 함께 확인할 수 있습니다.</p>
+<p class="source">참고: <a href="https://www.energy.gov/cmei/femp/severe-weather-resilience-solar-photovoltaic-system-design" rel="noopener" target="_blank">미국 에너지부 태양광 설비의 악천후 대응 설계 안내</a>. 해당 자료의 해외 기준·수치를 국내 현장의 설계값으로 그대로 적용하지 않습니다.</p><p class="source">이 안내는 일반 정보입니다. 개별 현장의 설계·시공과 구조안전 판단은 현장 자료 및 관련 전문가의 검토를 바탕으로 진행합니다.</p><section class="cta"><h2>두자에 현장 조건을 알려주세요</h2><p>현장 주소, 설치 목적, 보유 도면과 희망 일정을 정리하면 필요한 업무 범위를 상담하기 좋습니다.</p><a class="button btn" href="https://dooja.co.kr/services/solar-structural-review">태양광 구조검토 상담 안내 →</a></section><aside class="related" aria-label="관련 가이드"><h2>함께 확인할 가이드</h2><ul><li><a href="https://starichdog-collab.github.io/solar-structural-review/roof-solar-review.html">공장 지붕 검토자료</a></li><li><a href="https://starichdog-collab.github.io/solar-structural-review/snow-load.html">적설하중 검토</a></li></ul></aside></article>]]></description>
+    </item>
+  </channel>
+</rss>
