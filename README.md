@@ -1,74 +1,56 @@
-# 두자 공식 도메인으로 이전
+# 태양광 구조검토 자료실 · 두자 DOOJA
 
-공개 기술자료는 https://dooja.co.kr/solar-resources 에서 확인하세요. 기존 GitHub Pages의 각 HTML 주소는 대응하는 두자 문서로 즉시 이동하며, 새 canonical 주소를 표시합니다. 본문과 다운로드 도구의 운영 주소는 dooja.co.kr입니다.
+두자(DOOJA)가 운영하는 공개 기술자료와 브라우저에서 실행되는 준비자료 도구입니다.
 
-# 두자 태양광 구조검토 가이드
+- 자료실: https://starichdog-collab.github.io/solar-structural-review/
+- 공식 홈페이지: https://dooja.co.kr/
+- 업무 안내: https://dooja.co.kr/services/solar-structural-review
 
-정적 HTML로 제공하는 두자(DOOJA) 태양광 기술정보입니다.
+## 제공 내용
 
-- 사이트: https://dooja.co.kr/solar-structural-review
-- 공식 서비스: https://dooja.co.kr/
-- 업데이트: 2026-10-23
+| 페이지 | 용도 |
+| --- | --- |
+| index.html | 자료실 홈, 검토 범위와 공개 참고자료 안내 |
+| preparation.html | 지붕형·지상형·주차장형 준비자료 체크, TXT 다운로드 및 인쇄 |
+| report-reading.html | 구조계산서 대상·도면·입력 조건·적용 범위를 확인하는 질문 |
+| downloads/report-questions.txt | 결과 확인 질문지 |
 
-## 페이지
+이 자료실은 개별 현장의 하중 계산, 안전성 판정 또는 허가·계약 업무를 수행하지 않습니다. 자료 보유 개수는 안전 점수가 아닙니다. 관련 업무 범위와 상담은 두자 공식 홈페이지에서 안내합니다.
 
-- [태양광 구조검토 가이드](https://dooja.co.kr/solar-structural-review)
-- [공장 지붕 검토자료](https://dooja.co.kr/solar-structural-review/roof-solar-review)
-- [풍하중 검토](https://dooja.co.kr/solar-structural-review/wind-load)
-- [적설하중 검토](https://dooja.co.kr/solar-structural-review/snow-load)
+## 데이터 처리
 
-- [구조계산서 확인법](https://dooja.co.kr/solar-structural-review/structural-calculation-report)
+도구의 입력 내용은 현재 화면에서만 사용하며 서버로 전송하거나 브라우저 저장소에 저장하지 않습니다. 새로고침하면 초기화됩니다. 내려받은 TXT/PDF 파일은 사용자가 보관합니다. GitHub Pages 호스팅 서비스의 일반적인 요청 처리는 별개입니다.
 
 ## 유지보수
 
-- 기존 URL, canonical 주소와 Google·네이버 소유확인 태그를 유지합니다.
-- 내용을 수정하면 본문의 수정일, 구조화 데이터의 dateModified, 사이트맵 lastmod를 함께 갱신합니다. 실제 수정이 없는 날짜 갱신은 하지 않습니다.
-- 페이지를 추가·삭제하면 이 저장소의 sitemap.xml과 루트 저장소 starichdog-collab.github.io의 sitemap.xml을 함께 수정합니다. 루트 사이트맵은 현재 전체 14개 페이지를 포함합니다.
-- 루트 저장소의 feed.xml은 상세 글 11개의 본문 전체를 제공합니다. 제목·설명 변경 시 RSS 본문도 갱신합니다.
-- 검색로봇이 사용하는 robots.txt는 https://dooja.co.kr/robots.txt 입니다. 하위 프로젝트의 robots.txt만으로 수집 정책을 변경할 수 없습니다.
-- 문서의 내부 링크, HTML 제목·설명, JSON-LD와 사이트맵의 URL 일치를 확인하고 GitHub Pages 배포 성공을 확인합니다.
-- 검색 노출과 순위는 검색엔진이 결정합니다. 기술 설정이나 소유확인만으로 색인 또는 상위 노출이 보장되지는 않습니다.
+외부 패키지가 필요하지 않습니다. GitHub Pages의 main 브랜치 루트에서 배포합니다.
 
-- 각 가이드의 feed.xml에도 해당 가이드 글의 전체 본문을 담습니다. 링크는 절대주소로 작성합니다.
-- 태양광 용량 계산기는 동일 출력 모듈의 DC 정격용량을 합산합니다. 발전량·수익·구조안전을 산정하지 않습니다.
+- 생성: python3 scripts/build.py
+- 검증: node --test tests/planner.test.cjs
+- 항목과 동작: assets/planner.js
+- 문서 내용: scripts/build.py
+- 스타일: assets/site.css
+- 내용을 실제로 수정한 날짜만 빌더와 본문·RSS에 반영합니다.
+- 각 문서의 canonical은 자료실의 고유 주소입니다. 회사 홈페이지와 문서를 복제하지 않습니다.
+- sitemap.xml은 독립 자료실의 문서 3개만 포함합니다.
+- 하위 경로의 robots.txt는 호스트 전체의 정책을 설정하지 않습니다. 호스트 루트의 기존 robots.txt를 따릅니다.
+- 검색 노출, 순위, 외부 인용은 보장하지 않습니다.
 
-## 페이지 이미지
+## 기존 주소 보존
 
-- 2026-10-22: 주제에 맞는 이미지 3종을 전체 13개 페이지에 배치했습니다.
-- 공용 이미지와 CSS는 루트 사이트의 `/assets/images/`, `/assets/solar-images.css`에서 제공합니다.
-- 본문은 640·1024·1600px WebP를 반응형으로 사용하며, 공유용 대표 이미지는 1200px JPEG입니다.
-- 이미지 설명, 대체 텍스트, 대표 이미지 메타데이터, ImageObject 및 이미지 사이트맵을 함께 관리합니다.
-- 이미지는 설명용 예시이며 실제 두자 시공 실적이나 개별 현장의 시공 상세로 표시하지 않습니다.
+2026-10-25에 첫 화면을 독립 준비자료실로 변경했습니다. 기존에 회사 도메인으로 이전한 다음 문서의 이동 동작은 보존합니다.
 
-## 2026-10-22 추가 보강
+- roof-solar-review.html
+- wind-load.html
+- snow-load.html
+- structural-calculation-report.html
 
-- 기존 URL과 소유확인 태그를 보존하고 문서 대조·인수인계 콘텐츠를 추가했습니다.
-- GitHub Pages는 기술정보와 계산 예시를 제공하는 문서 사이트로 유지합니다. 계약·결제·개인정보 입력 기능은 두지 않습니다. 영업·서비스 내용은 공식 도메인에서 관리합니다.
+기존 downloads/solar-structural-review-request.txt도 유지합니다. 회사 홈페이지의 소스·도메인·배포 설정은 이 저장소에서 수정하지 않습니다.
 
+## 참고자료
 
-## 2026-10-23 질문별 설명 보강
+- [국가건설기준센터](https://www.kcsc.re.kr/standardCode/list/102041): 국내 설계기준 공식 확인 경로
+- [미국 에너지부 PV 설치 및 시운전 안내](https://www.energy.gov/cmei/femp/life-cycle-photovoltaic-systems-install-and-commission-photovoltaic-system): 해외 참고자료이며 국내 기준을 대신하지 않음
 
-- 기존 URL과 제목을 유지하고 구조검토·구조계산서·설치 시공의 구분, 설치 형식별 준비자료를 보강했습니다.
-- 공장 지붕 도면이 없을 때의 준비 순서와 비용·기간 협의 항목을 추가했습니다.
-- 구조계산서 안내에 설계 변경자료 정리 예시를 추가했습니다. 예시는 실제 수행실적이나 검토 결과가 아닙니다.
-- `/solar-structural-review/downloads/solar-structural-review-request.txt`에 내려받는 빈 상담 준비 양식을 제공합니다. 서버 제출·수집 기능은 없습니다.
-- 기술정보 홈에 질문별 바로가기를 추가하고 변경한 4개 페이지만 수정일·설명을 갱신했습니다. 사이트맵과 RSS 본문도 함께 반영했습니다.
-- 공식 도메인 dooja.co.kr의 원본이나 배포 설정은 이 저장소에서 관리하지 않습니다.
+공개 수행자료는 두자 홈페이지의 해당 프로젝트로 연결합니다. 확인되지 않은 실적·결과·자격·고객 평가는 추가하지 않습니다.
 
-## 2026-10-23 태양광 검토 범위 안내
-
-- 기술정보 홈은 태양광 기초와 주제 선택, 설치 가이드는 발전 원리·설치 준비, 구조검토 가이드는 구조안전 자료를 안내합니다.
-- `/solar-guide/solar-review.html`은 설치 조건·발전량·구조안전·전기 연결·공사 범위·운영 자료를 구분하고 같은 도면 기준으로 회신을 관리하는 새 안내입니다.
-- 세 안내의 제목·본문·내부 링크와 JSON-LD를 맞췄습니다. 기존 URL·이미지·소유확인 태그는 유지했습니다.
-- 루트와 설치 가이드의 사이트맵·RSS에 새 페이지를 추가했습니다. 기존 글의 발행일과 변경하지 않은 페이지의 수정일은 보존합니다.
-- 검색 결과에 기존 가이드가 확인되더라도 특정 검색어의 순위나 새 페이지의 색인을 보장하지 않습니다.
-
-
-
-## 2026-10-23 근거 자료 보완
-
-- 기존 구조검토 안내에 의뢰·검토·결과 확인 순서, 구조안전확인서 구분, 공식 설계기준과 설치확인 안내의 출처를 추가했습니다.
-- 경주 삼지2호와 평택 삼계리의 두자 공식 공개 수행자료를 연결하고, 다른 현장에 그대로 적용할 수 없음을 명시했습니다.
-- 구조계산서 안내에 제출 목적·서식·검토 대상·작성 주체·근거 자료 확인표를 추가했습니다.
-- 정부 자료의 발행 연도와 적용 범위를 표시하고, 모든 현장에 공통으로 적용되는 법정 발급 요건이나 자격을 임의로 단정하지 않습니다.
-- Article의 citation은 본문에 실제 표시한 원문 링크와 일치하며, 검색 순위 또는 AI 답변의 출처 선정을 보장하지 않습니다.
