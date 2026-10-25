@@ -2,7 +2,7 @@
 
 두자(DOOJA)가 운영하는 공개 기술자료와 브라우저에서 실행되는 준비자료 도구입니다.
 
-- 자료실: https://starichdog-collab.github.io/solar-structural-review/
+- 자료실: https://solar.dooja.co.kr/
 - 공식 홈페이지: https://dooja.co.kr/
 - 업무 안내: https://dooja.co.kr/services/solar-structural-review
 
@@ -33,7 +33,7 @@
 - 내용을 실제로 수정한 날짜만 빌더와 본문·RSS에 반영합니다.
 - 각 문서의 canonical은 자료실의 고유 주소입니다. 회사 홈페이지와 문서를 복제하지 않습니다.
 - sitemap.xml은 독립 자료실의 문서 3개만 포함합니다.
-- 하위 경로의 robots.txt는 호스트 전체의 정책을 설정하지 않습니다. 호스트 루트의 기존 robots.txt를 따릅니다.
+- 맞춤 도메인 연결 후 이 저장소 루트의 robots.txt를 사용합니다.
 - 검색 노출, 순위, 외부 인용은 보장하지 않습니다.
 
 ## 기존 주소 보존
@@ -54,3 +54,15 @@
 
 공개 수행자료는 두자 홈페이지의 해당 프로젝트로 연결합니다. 확인되지 않은 실적·결과·자격·고객 평가는 추가하지 않습니다.
 
+
+## 맞춤 도메인
+
+자료실의 공개 주소는 https://solar.dooja.co.kr/ 입니다.
+
+- GitHub Settings → Pages → Custom domain: solar.dooja.co.kr
+- 가비아 DNS: CNAME / host solar / target starichdog-collab.github.io. / TTL 600
+- 기존 dooja.co.kr의 A·TXT 레코드와 네임서버는 유지합니다.
+- 도메인을 변경할 때는 Pages 설정, DNS, CNAME 파일, 빌더의 BASE, canonical·사이트맵·RSS 주소를 함께 확인합니다.
+- 인증서 발급 완료 후 Enforce HTTPS를 사용합니다.
+
+CNAME 파일만 추가하는 것으로 GitHub Pages 도메인 설정을 대신하지 않습니다.

@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://starichdog-collab.github.io/solar-structural-review/sitemap.xml
+Sitemap: https://solar.dooja.co.kr/sitemap.xml
+

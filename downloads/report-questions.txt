@@ -33,5 +33,5 @@
 
 이 양식은 질문과 회신을 정리하기 위한 빈 자료입니다.
 개별 현장의 구조안전 판단이나 구조계산 검증을 대신하지 않습니다.
-자료실: https://starichdog-collab.github.io/solar-structural-review/
+자료실: https://solar.dooja.co.kr/
 두자 업무안내: https://dooja.co.kr/services/solar-structural-review
