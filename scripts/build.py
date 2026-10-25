@@ -7,7 +7,7 @@ import subprocess
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent.parent
-BASE = 'https://starichdog-collab.github.io/solar-structural-review/'
+BASE = 'https://solar.dooja.co.kr/'
 DATE = '2026-10-25'
 DOE = 'https://www.energy.gov/cmei/femp/life-cycle-photovoltaic-systems-install-and-commission-photovoltaic-system'
 KCSC = 'https://www.kcsc.re.kr/standardCode/list/102041'
@@ -20,7 +20,7 @@ def header(active):
     return '<a class="skip" href="#main">본문 바로가기</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="./" aria-label="두자 태양광 구조검토 자료실 홈"><strong>DOOJA.</strong><span>STRUCTURAL<br>RESOURCE LIBRARY</span></a><nav class="nav" aria-label="주 메뉴">'+nav+'<a class="external" href="https://dooja.co.kr/">공식 홈페이지 ↗</a></nav></div></header>'
 
 def footer():
-    return '''<footer class="site-footer"><div class="wrap"><div class="footer-top"><div><strong>태양광 구조검토 자료실</strong><p>두자(DOOJA)가 운영하는 공개 기술자료 공간입니다.<br>자료 준비와 결과 이해를 돕고, 개별 현장의 검토 범위는 상담에서 확인합니다.</p></div><div><div class="footer-links"><a href="https://dooja.co.kr/services/solar-structural-review">두자건설 업무범위</a><a href="https://dooja.co.kr/#contact">상담 안내</a><a href="https://blog.naver.com/doojasun1">공식 블로그</a></div><p><a href="tel:0222132634">02-2213-2634</a> · <a href="mailto:doojakorea@naver.com">doojakorea@naver.com</a><br>서울 동대문구 장한로24길 21 JK빌딩 5층</p></div></div><div class="footer-bottom"><span>© DOOJA · 자료 편집: 두자(DOOJA) · 수정일 2026.10.25</span><span><a href="https://github.com/starichdog-collab/solar-structural-review">공개 저장소</a> · <a href="sitemap.xml">사이트맵</a> · <a href="feed.xml">RSS</a></span></div></div></footer>'''
+    return '''<footer class="site-footer"><div class="wrap"><div class="footer-top"><div><strong>태양광 구조검토 자료실</strong><p>두자(DOOJA)가 운영하는 공개 기술자료 공간입니다.<br>자료 준비와 결과 이해를 돕고, 개별 현장의 검토 범위는 상담에서 확인합니다.</p></div><div><div class="footer-links"><a href="https://dooja.co.kr/services/solar-structural-review">두자건설 업무범위</a><a href="https://dooja.co.kr/#contact">상담 안내</a><a href="https://blog.naver.com/doojasun1">공식 블로그</a></div><p><a href="tel:0222132634">02-2213-2634</a> · <a href="mailto:doojakorea@naver.com">doojakorea@naver.com</a><br>서울 동대문구 장한로24길 21 JK빌딩 5층</p></div></div><div class="footer-bottom"><span>© DOOJA · 자료 편집: 두자(DOOJA) · 수정일 2026.10.25</span><span><a href="sitemap.xml">사이트맵</a> · <a href="feed.xml">RSS</a></span></div></div></footer>'''
 
 def page(path,title,description,body,script=False):
     url=BASE+('' if path=='index.html' else path)
@@ -99,7 +99,7 @@ questions='''태양광 구조검토 결과 확인 질문지
 
 이 양식은 질문과 회신을 정리하기 위한 빈 자료입니다.
 개별 현장의 구조안전 판단이나 구조계산 검증을 대신하지 않습니다.
-자료실: https://starichdog-collab.github.io/solar-structural-review/
+자료실: https://solar.dooja.co.kr/
 두자 업무안내: https://dooja.co.kr/services/solar-structural-review
 '''
 (ROOT/'downloads/report-questions.txt').write_text(questions,encoding='utf-8-sig')
