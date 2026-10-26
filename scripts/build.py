@@ -20,7 +20,7 @@ def header(active):
     return '<a class="skip" href="#main">본문 바로가기</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="https://dooja.co.kr/" aria-label="두자 공식 홈페이지로 이동"><strong>DOOJA.</strong><span>STRUCTURAL<br>RESOURCE LIBRARY</span></a><nav class="nav" aria-label="주 메뉴">'+nav+'<a class="external" href="https://dooja.co.kr/">공식 홈페이지 ↗</a></nav></div></header>'
 
 def footer():
-    return '''<footer class="site-footer"><div class="wrap"><div class="footer-top"><div><strong>태양광 구조검토 자료실</strong><p>두자(DOOJA)가 운영하는 공개 기술자료 공간입니다.<br>자료 준비와 결과 이해를 돕고, 개별 현장의 검토 범위는 상담에서 확인합니다.</p></div><div><div class="footer-links"><a href="https://dooja.co.kr/services/solar-structural-review">두자건설 업무범위</a><a href="https://dooja.co.kr/#contact">상담 안내</a><a href="https://blog.naver.com/doojasun1">공식 블로그</a></div><p><a href="tel:0222132634">02-2213-2634</a> · <a href="mailto:doojakorea@naver.com">doojakorea@naver.com</a><br>서울 동대문구 장한로24길 21 JK빌딩 5층</p></div></div><div class="footer-bottom"><span>© DOOJA · 자료 편집: 두자(DOOJA) · 수정일 2026.10.25</span><span><a href="sitemap.xml">사이트맵</a> · <a href="feed.xml">RSS</a></span></div></div></footer>'''
+    return (ROOT/'partials/contact-cards.html').read_text() + '''<footer class="site-footer"><div class="wrap"><div class="footer-top"><div><strong>태양광 구조검토 자료실</strong><p>두자(DOOJA)가 운영하는 공개 기술자료 공간입니다.<br>자료 준비와 결과 이해를 돕고, 개별 현장의 검토 범위는 상담에서 확인합니다.</p></div><div><div class="footer-links"><a href="https://dooja.co.kr/services/solar-structural-review">두자건설 업무범위</a><a href="https://dooja.co.kr/#contact">상담 안내</a><a href="https://blog.naver.com/doojasun1">공식 블로그</a></div><p><a href="tel:0222132634">02-2213-2634</a> · <a href="mailto:doojakorea@naver.com">doojakorea@naver.com</a><br>서울 동대문구 장한로24길 21 JK빌딩 5층</p></div></div><div class="footer-bottom"><span>© DOOJA · 자료 편집: 두자(DOOJA) · 수정일 2026.10.25</span><span><a href="sitemap.xml">사이트맵</a> · <a href="feed.xml">RSS</a></span></div></div></footer>'''
 
 def page(path,title,description,body,script=False):
     url=BASE+('' if path=='index.html' else path)
@@ -34,7 +34,7 @@ def page(path,title,description,body,script=False):
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'''
     html+='<title>'+escape(title)+'</title><meta name="description" content="'+escape(description,quote=True)+'"><link rel="canonical" href="'+url+'"><meta name="robots" content="index,follow,max-image-preview:large"><meta name="theme-color" content="#173b3a"><meta property="og:type" content="website"><meta property="og:locale" content="ko_KR"><meta property="og:site_name" content="두자 태양광 구조검토 자료실"><meta property="og:title" content="'+escape(title,quote=True)+'"><meta property="og:description" content="'+escape(description,quote=True)+'"><meta property="og:url" content="'+url+'"><meta name="twitter:card" content="summary"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css"><link rel="alternate" type="application/rss+xml" title="태양광 구조검토 자료실" href="'+BASE+'feed.xml"><script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False)+'</script>'
     if script:html+='<script src="assets/planner.js" defer></script>'
-    html+='</head><body>'+header(path)+body+footer()+'</body></html>\n'
+    html+='<link rel="stylesheet" href="assets/contact-cards.css?v=20261026"></head><body>'+header(path)+body+footer()+'</body></html>\n'
     (ROOT/path).write_text(html,encoding='utf-8')
     PAGES[path]={'url':url,'title':title,'description':description}
 
@@ -117,3 +117,4 @@ for p in PAGES.values():
     ET.SubElement(item,'guid',isPermaLink='true').text=p['url']
 ET.ElementTree(rss).write(ROOT/'feed.xml',encoding='utf-8',xml_declaration=True)
 print('Built '+str(len(PAGES))+' pages, sitemap, RSS and question worksheet.')
+

@@ -66,3 +66,8 @@
 - 인증서 발급 완료 후 Enforce HTTPS를 사용합니다.
 
 CNAME 파일만 추가하는 것으로 GitHub Pages 도메인 설정을 대신하지 않습니다.
+
+
+## 담당자 명함
+
+사용자 요청(2026-10-26)에 따라 모든 자료실 문서 하단에 이한이 과장·이수진 본부장 명함을 함께 표시합니다. 원본은 `assets/contact/`, 공통 블록은 `partials/contact-cards.html`, 스타일은 `assets/contact-cards.css`에서 관리합니다. 두 장을 함께 유지하고 원본 연락처를 임의로 변경하지 않습니다.
