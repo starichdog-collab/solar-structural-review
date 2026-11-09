@@ -51,12 +51,12 @@
 
 외부 패키지가 필요하지 않습니다. GitHub Pages의 main 브랜치 루트에서 배포합니다.
 
-- 생성: python3 scripts/build.py
+- 검색 피드 갱신: python3 scripts/build-discovery.py
 - 검증: node --test tests/planner.test.cjs
 - 항목과 동작: assets/planner.js
-- 문서 내용: scripts/build.py
+- 문서 내용: index.html, preparation.html, report-reading.html (현재 공개 원본)
 - 스타일: assets/site.css
-- 내용을 실제로 수정한 날짜만 빌더와 본문·RSS에 반영합니다.
+- 내용을 실제로 수정한 날짜만 각 WebPage의 dateModified와 보이는 수정일에 반영하고 검색 피드를 갱신합니다.
 - 각 문서의 canonical은 자료실의 고유 주소입니다. 회사 홈페이지와 문서를 복제하지 않습니다.
 - sitemap.xml은 독립 자료실의 문서 3개만 포함합니다.
 - 맞춤 도메인 연결 후 이 저장소 루트의 robots.txt를 사용합니다.
@@ -100,3 +100,16 @@ CNAME 파일만 추가하는 것으로 GitHub Pages 도메인 설정을 대신�
 
 명함 두 장은 각 페이지의 제목·소개 영역 바로 다음에 함께 표시합니다. 하단에 중복으로 넣지 않습니다.
 
+
+
+
+## 검색 수집 설정 · 2026-11-10
+
+`python3 scripts/build-discovery.py`는 현재 HTML 본문에서 사이트맵과 본문 전체 RSS를 만듭니다. HTML·명함·기존 다운로드 파일을 덮어쓰지 않습니다. 과거 템플릿 `scripts/build.py`는 현재 공개 문서와 다르므로 문서 갱신에 실행하지 마세요.
+
+- canonical·사이트맵·RSS 문서 URL은 모두 `https://solar.dooja.co.kr/` 아래의 고유한 세 페이지입니다.
+- RSS는 읽을 수 있는 본문 전체와 절대경로 링크를 포함합니다. `pubDate`는 원래 발행일을 유지합니다.
+- robots.txt는 수집을 허용하며 사이트맵을 알립니다.
+- 서치어드바이저에 별도 주소 `https://solar.dooja.co.kr`의 소유확인을 완료했다면 `https://solar.dooja.co.kr/sitemap.xml`, `https://solar.dooja.co.kr/feed.xml`을 해당 주소에 제출합니다. 메인 도메인의 소유확인을 이 주소의 확인 완료로 간주하지 않습니다.
+- 이 자료실만의 공개 IndexNow 키 파일을 루트에 두었습니다. 다른 도메인의 키와 혼용하지 않습니다. 수정한 페이지가 공개된 뒤에만 `python3 scripts/notify-indexnow.py / /preparation.html /report-reading.html --submit`을 한 번 실행합니다. 이전 URL을 반복 제출하거나 검색 순위를 보장하지 않습니다.
+- 공식 기준: https://searchadvisor.naver.com/guide/request-feed 및 https://searchadvisor.naver.com/guide/indexnow-api-key
